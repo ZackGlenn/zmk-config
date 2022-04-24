@@ -1,0 +1,34 @@
+{
+  "keyboard": "corne",
+  "keymap": "default",
+  "layout": "LAYOUT",
+  "layer_names": [
+    "base",
+    "symbol",
+    "navigation",
+    "GAMING"
+  ],
+  "layers": [
+    [
+                           "&kp Q",          "&kp W",            "&kp E",              "&kp R",     "&kp T",  "&kp Y",       "&kp U",             "&kp I",           "&kp O",                    "&kp P",
+                 "&mt LEFT_META A", "&mt LEFT_ALT S", "&mt LEFT_SHIFT D", "&mt LEFT_CONTROL F",     "&kp G",  "&kp H", "&mt RCTRL J", "&mt RIGHT_SHIFT K", "&mt RIGHT_ALT L", "&mt RIGHT_META SEMICOLON",
+                           "&kp Z",          "&kp X",            "&kp C",              "&kp V",     "&kp B",  "&kp N",       "&kp M",         "&kp COMMA",         "&kp DOT",                 "&kp FSLH",
+                                                                               "&kp BACKSPACE", "&lt 2 TAB",             "&kp SPACE",       "&lt 1 ENTER"
+    ], [
+                               "&kp N1",            "&kp N2",                          "&kp N3",                      "&kp N4",           "&kp N5",        "&kp N6",           "&kp N7",            "&kp N8",              "&kp N9",             "&kp N0",
+                 "&mt LEFT_META DOLLAR", "&mt LEFT_ALT PLUS", "&mt LEFT_SHIFT LEFT_PARENTHESIS", "&mt LCTRL RIGHT_PARENTHESIS", "&kp SINGLE_QUOTE",   "&kp PERCENT",  "&mt RCTRL MINUS",   "&mt RSHFT EQUAL", "&mt RALT UNDERSCORE", "&mt RMETA ASTERISK",
+                             "&kp EXCL",         "&kp POUND",                  "&kp LEFT_BRACE",             "&kp RIGHT_BRACE",        "&kp GRAVE", "&kp AMPERSAND", "&kp LEFT_BRACKET", "&kp RIGHT_BRACKET",       "&kp BACKSLASH",          "&kp CARET",
+                                                                                                                      "&trans",           "&trans",                            "&trans",            "&trans"
+    ], [
+                 "&kp K_MUTE", "&kp C_VOLUME_DOWN", "&kp C_VOL_UP", "&kp K_MUTE2",    "&kp K_REFRESH", "&kp K_LOCK", "&kp C_BRI_DN", "&kp C_BRI_UP", "&kp PRINTSCREEN", "&kp INSERT",
+                   "&kp HOME",         "&kp PG_DN",  "&kp PAGE_UP",     "&kp END", "&kp K_PLAY_PAUSE",   "&kp LEFT",     "&kp DOWN",       "&kp UP",       "&kp RIGHT",     "&tog 3",
+                     "&kp F1",            "&kp F2",       "&kp F3",      "&kp F4",           "&kp F5",     "&kp F6",       "&kp F7",       "&kp F8",          "&kp F9",    "&kp F10",
+                                                                         "&trans",           "&trans",                     "&trans",       "&trans"
+    ], [
+                          "&kp ESC",  "&kp Q",  "&kp W",  "&kp E",  "&kp R",  "&kp T",  "&kp Y",  "&kp U",  "&kp I",         "&kp O",
+                   "&kp LEFT_SHIFT",  "&kp A",  "&kp S",  "&kp D",  "&kp F",  "&kp G",  "&kp H",  "&kp J",  "&kp K",         "&kp L",
+                 "&kp LEFT_CONTROL",  "&kp Z",  "&kp X",  "&kp C",  "&kp V",  "&kp B",  "&kp N",  "&kp M",  "&kp P", "&kp RIGHT_ALT",
+                                                         "&trans", "&trans",           "&trans", "&trans"
+    ]
+  ]
+}
