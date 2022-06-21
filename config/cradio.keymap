@@ -5,17 +5,16 @@
  * SPDX-License-Identifier: MIT
  */
 
-
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
+
+    &mt {
+        flavor = "balanced";
+        quick-tap-ms = <125>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,7 +46,7 @@
             >;
         };
 
-        layer_GAMING {
+        layer_gaming{
             bindings = <
                   &kp ESC   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I          &kp O
            &kp LEFT_SHIFT   &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K          &kp L
