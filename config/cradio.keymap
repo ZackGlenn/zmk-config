@@ -10,9 +10,11 @@
 
 / {
 
-    &mt {
-        flavor = "balanced";
-        quick-tap-ms = <125>;
+    behaviors {
+        &mt {
+            flavor = "balanced";
+            quick-tap-ms = <125>;
+        };
     };
 
     keymap {
