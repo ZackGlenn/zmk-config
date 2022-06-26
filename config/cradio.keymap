@@ -50,6 +50,7 @@
         esc_esc: esc_esc {
             wait-ms = <0>;
             tap-ms = <0>;
+            #binding-cells = <0>;
             bindings = <&macro_release &kp LSHFT>,
                 <&macro_tap &kp ESC>,
                 <&macro_press &kp LSHFT>,
