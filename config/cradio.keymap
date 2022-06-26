@@ -37,13 +37,6 @@
         //     mods = <(MOD_LSFT|MOD_RSFT)>;
         // }; 
 
-        spesc: spesc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_ESC";
-            #binding-cells = <0>;
-            bindings = <&kp N0>, <&esc_esc>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
     
     macros {
@@ -55,6 +48,14 @@
                 <&macro_tap &kp ESC>,
                 <&macro_press &kp LSHFT>,
                 <&macro_pause_for_release>;
+        };
+        
+        spesc: spesc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&esc_esc>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
