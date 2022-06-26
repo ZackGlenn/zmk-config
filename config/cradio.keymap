@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_ESC";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&esc_esc>;
+            bindings = <&lt 1 SPACE>, <&esc_esc>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
