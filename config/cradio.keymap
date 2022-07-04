@@ -1,14 +1,17 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+
+//  Copyright (c) 2020 The ZMK Contributors
+//  SPDX-License-Identifier: MIT
+
+// ZMK config for my Sweep keyboard, using home-row modifiers and layer-tap 
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+// Use a hold-tap behavior that doesn't make me hate myself
+// Allow tap-hold to trigger hold behavior
 &mt {
     flavor = "balanced";
     quick-tap-ms = <200>;
@@ -20,26 +23,9 @@
 };
 
 / {
-    behaviors {
-        // td0: tap_dance_0 {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "TAP_DANCE_0";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&lt 1 SPACE>, <&kp ESC>;
-        // };
-        
-        // spesc: space_escape {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "SPACE_ESCAPE";
-        //     #binding-cells = <0>;
-        //     bindings = <&lt 1 SPACE>, <&kp ESC>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // }; 
-
-    };
-    
     macros {
+
+        // Workaround for mod-morph sending ctrl-tab instead of just tab
         tab_tab: tab_tab {
             compatible = "zmk,behavior-macro";
             label = "TAB_TAB";
@@ -52,6 +38,7 @@
                 <&macro_pause_for_release>;
         };
         
+        // Mod-morph for transforming ctrl-space into tab
         spab: spab {
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_TAB";
@@ -64,7 +51,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-
+        // QWERTY layer with home-row mods and additional thumb keys
         default_layer {
             bindings = <
                    &kp Q           &kp W             &kp E               &kp R            &kp T    &kp Y        &kp U              &kp I            &kp O                     &kp P
@@ -74,7 +61,8 @@
             >;
         };
 
-        layer_symbol {
+        // Numbers and symbols layer with home-row mods; optimized for general coding
+        symbol_layer {
             bindings = <
                        &kp N1             &kp N2                           &kp N3                       &kp N4            &kp N5         &kp N6            &kp N7             &kp N8               &kp N9              &kp N0
          &mt LEFT_META DOLLAR  &mt LEFT_ALT PLUS  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp SINGLE_QUOTE    &kp PERCENT   &mt RCTRL MINUS    &mt RSHFT EQUAL  &mt RALT UNDERSCORE  &mt RMETA ASTERISK
@@ -83,7 +71,8 @@
             >;
         };
 
-        layer_navigation {
+        // Miscellanius layer for system/bluetooth control, navigation, and media control
+        navigation_layer {
             bindings = <
              &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_SEL 1  &out OUT_TOG  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP
             &bootloader  &kp K_LOCK    &kp HOME       &kp END     &kp K_WWW    &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT        &reset
@@ -92,9 +81,11 @@
             >;
         };
 
-        layer_gaming{
+        // Gaming layer; standard QWERTY layout shifted one column to the right.
+        // This makes the wasd keys work better with the Sweep's column stagger and makes room for other needed keys.
+        gaming_layer {
             bindings = <
-                  &kp ESC   &kp Q   &kp W   &kp E      &kp R   &kp T   &kp Y   &kp U   &kp I          &kp O
+                  &kp TAB   &kp Q   &kp W   &kp E      &kp R   &kp T   &kp Y   &kp U   &kp I          &kp O
            &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F   &kp G   &kp H   &kp J   &kp K          &kp L
          &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V   &kp B   &kp N   &kp M   &kp P  &kp RIGHT_ALT
                                            &trans  &kp SPACE  &trans  &tog 3
