@@ -14,12 +14,14 @@
 // Allow tap-hold to trigger hold behavior
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <200>;
+    quick-tap-ms = <175>;
+    global-quick-tap;
 };
 
 &lt {
     flavor = "balanced";
-    quick-tap-ms = <200>;
+    quick-tap-ms = <175>;
+    global-quick-tap;
 };
 
 / {
