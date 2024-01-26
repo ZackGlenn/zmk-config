@@ -40,30 +40,57 @@
         // QWERTY layer with home-row mods and additional thumb keys
         default_layer {
             bindings = <
-                   &kp Q           &kp W             &kp E               &kp R            &kp T         &kp Y        &kp U              &kp I            &kp O                     &kp P
-         &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F            &kp G         &kp H  &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_META SEMICOLON
-                   &kp Z           &kp X             &kp C               &kp V            &kp B         &kp N        &kp M          &kp COMMA          &kp DOT                  &kp FSLH
-                                                                     &lt 2 ESC  &lt 1 BACKSPACE    &space_tab  &lt 2 ENTER
+//    ┌─────────────────┬────────────────┬──────────────────┬────────────────────┬─────────────────┐   ┌────────────┬─────────────┬───────────────────┬─────────────────┬──────────────────────────┐
+//    │      &kp Q      │     &kp W      │      &kp E       │       &kp R        │      &kp T      │   │   &kp Y    │    &kp U    │       &kp I       │      &kp O      │          &kp P           │
+//    ├─────────────────┼────────────────┼──────────────────┼────────────────────┼─────────────────┤   ├────────────┼─────────────┼───────────────────┼─────────────────┼──────────────────────────┤
+//    │ &mt LEFT_META A │ &mt LEFT_ALT S │ &mt LEFT_SHIFT D │ &mt LEFT_CONTROL F │      &kp G      │   │   &kp H    │ &mt RCTRL J │ &mt RIGHT_SHIFT K │ &mt RIGHT_ALT L │ &mt RIGHT_META SEMICOLON │
+//    ├─────────────────┼────────────────┼──────────────────┼────────────────────┼─────────────────┤   ├────────────┼─────────────┼───────────────────┼─────────────────┼──────────────────────────┤
+//    │      &kp Z      │     &kp X      │      &kp C       │       &kp V        │      &kp B      │   │   &kp N    │    &kp M    │     &kp COMMA     │     &kp DOT     │         &kp FSLH         │
+//    └─────────────────┴────────────────┴──────────────────┼────────────────────┼─────────────────┤   ├────────────┼─────────────┼───────────────────┴─────────────────┴──────────────────────────┘
+//                                                          │     &lt 2 ESC      │ &lt 1 BACKSPACE │   │ &space_tab │ &lt 2 ENTER │                                                                 
+//                                                          └────────────────────┴─────────────────┘   └────────────┴─────────────┘                                                                 
+  &kp Q             &kp W            &kp E              &kp R                &kp T                 &kp Y        &kp U         &kp I               &kp O             &kp P                   
+  &mt LEFT_META A   &mt LEFT_ALT S   &mt LEFT_SHIFT D   &mt LEFT_CONTROL F   &kp G                 &kp H        &mt RCTRL J   &mt RIGHT_SHIFT K   &mt RIGHT_ALT L   &mt RIGHT_META SEMICOLON
+  &kp Z             &kp X            &kp C              &kp V                &kp B                 &kp N        &kp M         &kp COMMA           &kp DOT           &kp FSLH                
+                                                        &lt 2 ESC            &lt 1 BACKSPACE       &space_tab   &lt 2 ENTER                                                                 
             >;
         };
 
         // Numbers and symbols layer with home-row mods; optimized for general coding
         symbol_layer {
             bindings = <
-                       &kp N1             &kp N2                           &kp N3                       &kp N4            &kp N5         &kp N6            &kp N7             &kp N8               &kp N9              &kp N0
-         &mt LEFT_META DOLLAR  &mt LEFT_ALT PLUS  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp SINGLE_QUOTE    &kp PERCENT   &mt RCTRL MINUS    &mt RSHFT EQUAL  &mt RALT UNDERSCORE  &mt RMETA ASTERISK
-                     &kp EXCL          &kp POUND                   &kp LEFT_BRACE              &kp RIGHT_BRACE         &kp GRAVE  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp BACKSLASH           &kp CARET
-                                                                                                        &trans            &trans         &trans            &trans
+//    ┌──────────────────────┬───────────────────┬─────────────────────────────────┬─────────────────────────────┬──────────────────┐   ┌───────────────┬──────────────────┬───────────────────┬─────────────────────┬────────────────────┐
+//    │        &kp N1        │      &kp N2       │             &kp N3              │           &kp N4            │      &kp N5      │   │    &kp N6     │      &kp N7      │      &kp N8       │       &kp N9        │       &kp N0       │
+//    ├──────────────────────┼───────────────────┼─────────────────────────────────┼─────────────────────────────┼──────────────────┤   ├───────────────┼──────────────────┼───────────────────┼─────────────────────┼────────────────────┤
+//    │ &mt LEFT_META DOLLAR │ &mt LEFT_ALT PLUS │ &mt LEFT_SHIFT LEFT_PARENTHESIS │ &mt LCTRL RIGHT_PARENTHESIS │ &kp SINGLE_QUOTE │   │  &kp PERCENT  │ &mt RCTRL MINUS  │  &mt RSHFT EQUAL  │ &mt RALT UNDERSCORE │ &mt RMETA ASTERISK │
+//    ├──────────────────────┼───────────────────┼─────────────────────────────────┼─────────────────────────────┼──────────────────┤   ├───────────────┼──────────────────┼───────────────────┼─────────────────────┼────────────────────┤
+//    │       &kp EXCL       │     &kp POUND     │         &kp LEFT_BRACE          │       &kp RIGHT_BRACE       │    &kp GRAVE     │   │ &kp AMPERSAND │ &kp LEFT_BRACKET │ &kp RIGHT_BRACKET │    &kp BACKSLASH    │     &kp CARET      │
+//    └──────────────────────┴───────────────────┴─────────────────────────────────┼─────────────────────────────┼──────────────────┤   ├───────────────┼──────────────────┼───────────────────┴─────────────────────┴────────────────────┘
+//                                                                                 │           &trans            │      &trans      │   │    &trans     │      &trans      │                                                               
+//                                                                                 └─────────────────────────────┴──────────────────┘   └───────────────┴──────────────────┘                                                               
+  &kp N1                 &kp N2              &kp N3                            &kp N4                        &kp N5                 &kp N6          &kp N7             &kp N8              &kp N9                &kp N0            
+  &mt LEFT_META DOLLAR   &mt LEFT_ALT PLUS   &mt LEFT_SHIFT LEFT_PARENTHESIS   &mt LCTRL RIGHT_PARENTHESIS   &kp SINGLE_QUOTE       &kp PERCENT     &mt RCTRL MINUS    &mt RSHFT EQUAL     &mt RALT UNDERSCORE   &mt RMETA ASTERISK
+  &kp EXCL               &kp POUND           &kp LEFT_BRACE                    &kp RIGHT_BRACE               &kp GRAVE              &kp AMPERSAND   &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp BACKSLASH         &kp CARET         
+                                                                               &trans                        &trans                 &trans          &trans                                                                         
             >;
         };
 
         // Miscellanius layer for system/bluetooth control, navigation, and media control
         navigation_layer {
             bindings = <
-             &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_SEL 0  &out OUT_TOG  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP
-            &bootloader  &kp K_LOCK    &kp HOME       &kp END     &kp K_WWW    &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT        &sys_reset
-                 &kp F1      &kp F2      &kp F3        &kp F4        &kp F5      &kp F6        &kp F7        &kp F8        &kp F9       &kp F10
-                                                       &trans        &trans    &kp C_PP        &tog 3
+//    ┌─────────────┬────────────┬────────────┬──────────────┬──────────────┐   ┌────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
+//    │ &bt BT_PRV  │ &bt BT_NXT │ &bt BT_CLR │ &bt BT_SEL 0 │ &out OUT_TOG │   │ &kp K_MUTE │ &kp C_VOL_DN │ &kp C_VOL_UP │ &kp C_BRI_DN │ &kp C_BRI_UP │
+//    ├─────────────┼────────────┼────────────┼──────────────┼──────────────┤   ├────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+//    │ &bootloader │ &kp K_LOCK │  &kp HOME  │   &kp END    │  &kp K_WWW   │   │  &kp LEFT  │   &kp DOWN   │    &kp UP    │  &kp RIGHT   │  &sys_reset  │
+//    ├─────────────┼────────────┼────────────┼──────────────┼──────────────┤   ├────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+//    │   &kp F1    │   &kp F2   │   &kp F3   │    &kp F4    │    &kp F5    │   │   &kp F6   │    &kp F7    │    &kp F8    │    &kp F9    │   &kp F10    │
+//    └─────────────┴────────────┴────────────┼──────────────┼──────────────┤   ├────────────┼──────────────┼──────────────┴──────────────┴──────────────┘
+//                                            │    &trans    │    &trans    │   │  &kp C_PP  │    &tog 3    │                                             
+//                                            └──────────────┴──────────────┘   └────────────┴──────────────┘                                             
+  &bt BT_PRV    &bt BT_NXT   &bt BT_CLR   &bt BT_SEL 0   &out OUT_TOG       &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_BRI_DN   &kp C_BRI_UP
+  &bootloader   &kp K_LOCK   &kp HOME     &kp END        &kp K_WWW          &kp LEFT     &kp DOWN       &kp UP         &kp RIGHT      &sys_reset  
+  &kp F1        &kp F2       &kp F3       &kp F4         &kp F5             &kp F6       &kp F7         &kp F8         &kp F9         &kp F10     
+                                          &trans         &trans             &kp C_PP     &tog 3                                                   
             >;
         };
 
@@ -71,10 +98,19 @@
         // This makes the wasd keys work better with the Sweep's column stagger and makes room for other needed keys.
         gaming_layer {
             bindings = <
-                  &kp TAB   &kp Q   &kp W   &kp E      &kp R   &kp T   &kp Y   &kp U   &kp I          &kp O
-           &kp LEFT_SHIFT   &kp A   &kp S   &kp D      &kp F   &kp G   &kp H   &kp J   &kp K          &kp L
-         &kp LEFT_CONTROL   &kp Z   &kp X   &kp C      &kp V   &kp B   &kp N   &kp M   &kp P  &kp RIGHT_ALT
-                                           &trans  &kp SPACE  &trans  &tog 3
+//    ┌──────────────────┬───────┬───────┬────────┬───────────┐   ┌────────┬────────┬───────┬───────┬───────────────┐
+//    │     &kp TAB      │ &kp Q │ &kp W │ &kp E  │   &kp R   │   │ &kp T  │ &kp Y  │ &kp U │ &kp I │     &kp O     │
+//    ├──────────────────┼───────┼───────┼────────┼───────────┤   ├────────┼────────┼───────┼───────┼───────────────┤
+//    │  &kp LEFT_SHIFT  │ &kp A │ &kp S │ &kp D  │   &kp F   │   │ &kp G  │ &kp H  │ &kp J │ &kp K │     &kp L     │
+//    ├──────────────────┼───────┼───────┼────────┼───────────┤   ├────────┼────────┼───────┼───────┼───────────────┤
+//    │ &kp LEFT_CONTROL │ &kp Z │ &kp X │ &kp C  │   &kp V   │   │ &kp B  │ &kp N  │ &kp M │ &kp P │ &kp RIGHT_ALT │
+//    └──────────────────┴───────┴───────┼────────┼───────────┤   ├────────┼────────┼───────┴───────┴───────────────┘
+//                                       │ &trans │ &kp SPACE │   │ &trans │ &tog 3 │                                
+//                                       └────────┴───────────┘   └────────┴────────┘                                
+  &kp TAB            &kp Q   &kp W   &kp E    &kp R           &kp T    &kp Y    &kp U   &kp I   &kp O        
+  &kp LEFT_SHIFT     &kp A   &kp S   &kp D    &kp F           &kp G    &kp H    &kp J   &kp K   &kp L        
+  &kp LEFT_CONTROL   &kp Z   &kp X   &kp C    &kp V           &kp B    &kp N    &kp M   &kp P   &kp RIGHT_ALT
+                                     &trans   &kp SPACE       &trans   &tog 3                                
             >;
         };
 
