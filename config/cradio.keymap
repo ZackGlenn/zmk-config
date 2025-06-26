@@ -81,14 +81,14 @@
 //    ┌──────────┬──────────┬──────────┬──────────┬────────┐   ┌──────┬───────┬──────┬──────┬────────────┐
 //    │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_clr │   │ mute │ vold  │ volu │ bri- │    bri+    │
 //    ├──────────┼──────────┼──────────┼──────────┼────────┤   ├──────┼───────┼──────┼──────┼────────────┤
-//    │   boot   │   lock   │   home   │   end    │ K_WWW  │   │ left │ down  │  up  │ rght │ &sys_reset │
+//    │   boot   │   lock   │   home   │   end    │  DEL   │   │ left │ down  │  up  │ rght │ &sys_reset │
 //    ├──────────┼──────────┼──────────┼──────────┼────────┤   ├──────┼───────┼──────┼──────┼────────────┤
 //    │    f1    │    f2    │    f3    │    f4    │   f5   │   │  f6  │  f7   │  f8  │  f9  │    f10     │
 //    └──────────┴──────────┴──────────┼──────────┼────────┤   ├──────┼───────┼──────┴──────┴────────────┘
 //                                     │          │        │   │ play │ tog 3 │                           
 //                                     └──────────┴────────┘   └──────┴───────┘                           
   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR       &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_BRI_DN   &kp C_BRI_UP
-  &bootloader    &kp K_LOCK     &kp HOME       &kp END        &kp K_WWW        &kp LEFT     &kp DOWN       &kp UP         &kp RIGHT      &sys_reset  
+  &bootloader    &kp K_LOCK     &kp HOME       &kp END        &kp DEL          &kp LEFT     &kp DOWN       &kp UP         &kp RIGHT      &sys_reset  
   &kp F1         &kp F2         &kp F3         &kp F4         &kp F5           &kp F6       &kp F7         &kp F8         &kp F9         &kp F10     
                                                &trans         &trans           &kp C_PP     &tog 3                                                   
             >;
