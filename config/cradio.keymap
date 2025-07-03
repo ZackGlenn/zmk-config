@@ -47,12 +47,12 @@
 //    ├───────────┼───────────┼───────────┼───────────────────┼───────────┤   ├────────────┼───────────┼───────────┼───────────┼───────────┤
 //    │     Z     │     X     │     C     │         V         │     B     │   │     N      │     M     │     ,     │     .     │     /     │
 //    └───────────┴───────────┴───────────┼───────────────────┼───────────┤   ├────────────┼───────────┼───────────┴───────────┴───────────┘
-//                                        │     lt 2 esc      │ lt 1 bspc │   │ &space_tab │ lt 2 ent  │                                    
-//                                        └───────────────────┴───────────┘   └────────────┴───────────┘                                    
-  &kp Q             &kp W            &kp E              &kp R                &kp T                 &kp Y        &kp U         &kp I               &kp O             &kp P                   
+//                                        │     lt 2 esc      │ lt 1 bspc │   │ &space_tab │ lt 2 ent  │
+//                                        └───────────────────┴───────────┘   └────────────┴───────────┘
+  &kp Q             &kp W            &kp E              &kp R                &kp T                 &kp Y        &kp U         &kp I               &kp O             &kp P
   &mt LEFT_META A   &mt LEFT_ALT S   &mt LEFT_SHIFT D   &mt LEFT_CONTROL F   &kp G                 &kp H        &mt RCTRL J   &mt RIGHT_SHIFT K   &mt RIGHT_ALT L   &mt RIGHT_META SEMICOLON
-  &kp Z             &kp X            &kp C              &kp V                &kp B                 &kp N        &kp M         &kp COMMA           &kp DOT           &kp FSLH                
-                                                        &lt 2 ESC            &lt 1 BACKSPACE       &space_tab   &lt 2 ENTER                                                                 
+  &kp Z             &kp X            &kp C              &kp V                &kp B                 &kp N        &kp M         &kp COMMA           &kp DOT           &kp FSLH
+                                                        &lt 2 ESC            &lt 1 BACKSPACE       &space_tab   &lt 2 ENTER
             >;
         };
 
@@ -66,12 +66,12 @@
 //    ├───────────┼───────────┼───────────┼───────────┼─────┤   ├─────┼───────────┼───────────┼───────────┼───────────┤
 //    │     !     │     #     │     {     │     }     │  `  │   │  &  │     [     │     ]     │     \     │     ^     │
 //    └───────────┴───────────┴───────────┼───────────┼─────┤   ├─────┼───────────┼───────────┴───────────┴───────────┘
-//                                        │           │     │   │     │           │                                    
-//                                        └───────────┴─────┘   └─────┴───────────┘                                    
-  &kp N1                 &kp N2              &kp N3                            &kp N4                        &kp N5                 &kp N6          &kp N7             &kp N8              &kp N9                &kp N0            
+//                                        │           │     │   │     │           │
+//                                        └───────────┴─────┘   └─────┴───────────┘
+  &kp N1                 &kp N2              &kp N3                            &kp N4                        &kp N5                 &kp N6          &kp N7             &kp N8              &kp N9                &kp N0
   &mt LEFT_META DOLLAR   &mt LEFT_ALT PLUS   &mt LEFT_SHIFT LEFT_PARENTHESIS   &mt LCTRL RIGHT_PARENTHESIS   &kp SINGLE_QUOTE       &kp PERCENT     &mt RCTRL MINUS    &mt RSHFT EQUAL     &mt RALT UNDERSCORE   &mt RMETA ASTERISK
-  &kp EXCL               &kp POUND           &kp LEFT_BRACE                    &kp RIGHT_BRACE               &kp GRAVE              &kp AMPERSAND   &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp BACKSLASH         &kp CARET         
-                                                                               &trans                        &trans                 &trans          &trans                                                                         
+  &kp EXCL               &kp POUND           &kp LEFT_BRACE                    &kp RIGHT_BRACE               &kp GRAVE              &kp AMPERSAND   &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp BACKSLASH         &kp CARET
+                                                                               &trans                        &trans                 &trans          &trans
             >;
         };
 
@@ -81,16 +81,16 @@
 //    ┌──────────┬──────────┬──────────┬──────────┬────────┐   ┌──────┬───────┬──────┬──────┬────────────┐
 //    │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_clr │   │ mute │ vold  │ volu │ bri- │    bri+    │
 //    ├──────────┼──────────┼──────────┼──────────┼────────┤   ├──────┼───────┼──────┼──────┼────────────┤
-//    │   boot   │   lock   │   home   │   end    │  DEL   │   │ left │ down  │  up  │ rght │ &sys_reset │
+//    │   boot   │   lock   │   home   │   end    │  del   │   │ left │ down  │  up  │ rght │ &sys_reset │
 //    ├──────────┼──────────┼──────────┼──────────┼────────┤   ├──────┼───────┼──────┼──────┼────────────┤
 //    │    f1    │    f2    │    f3    │    f4    │   f5   │   │  f6  │  f7   │  f8  │  f9  │    f10     │
 //    └──────────┴──────────┴──────────┼──────────┼────────┤   ├──────┼───────┼──────┴──────┴────────────┘
-//                                     │          │        │   │ play │ tog 3 │                           
-//                                     └──────────┴────────┘   └──────┴───────┘                           
+//                                     │          │        │   │ play │ tog 3 │
+//                                     └──────────┴────────┘   └──────┴───────┘
   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR       &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_BRI_DN   &kp C_BRI_UP
-  &bootloader    &kp K_LOCK     &kp HOME       &kp END        &kp DEL          &kp LEFT     &kp DOWN       &kp UP         &kp RIGHT      &sys_reset  
-  &kp F1         &kp F2         &kp F3         &kp F4         &kp F5           &kp F6       &kp F7         &kp F8         &kp F9         &kp F10     
-                                               &trans         &trans           &kp C_PP     &tog 3                                                   
+  &bootloader    &kp K_LOCK     &kp HOME       &kp END        &kp DEL          &kp LEFT     &kp DOWN       &kp UP         &kp RIGHT      &sys_reset
+  &kp F1         &kp F2         &kp F3         &kp F4         &kp F5           &kp F6       &kp F7         &kp F8         &kp F9         &kp F10
+                                               &trans         &trans           &kp C_PP     &tog 3
             >;
         };
 
@@ -98,19 +98,19 @@
         // This makes the wasd keys work better with the Sweep's column stagger and makes room for other needed keys.
         gaming_layer {
             bindings = <
-//    ┌──────────────┬───┬───┬─────┬─────┐   ┌─────┬───────┬───┬───┬──────┐
-//    │     tab      │ Q │ W │  E  │  R  │   │  T  │   Y   │ U │ I │  O   │
-//    ├──────────────┼───┼───┼─────┼─────┤   ├─────┼───────┼───┼───┼──────┤
-//    │     lsft     │ A │ S │  D  │  F  │   │  G  │   H   │ J │ K │  L   │
-//    ├──────────────┼───┼───┼─────┼─────┤   ├─────┼───────┼───┼───┼──────┤
-//    │ left_CONTROL │ Z │ X │  C  │  V  │   │  B  │   N   │ M │ P │ ralt │
-//    └──────────────┴───┴───┼─────┼─────┤   ├─────┼───────┼───┴───┴──────┘
-//                           │     │ spc │   │     │ tog 3 │               
-//                           └─────┴─────┘   └─────┴───────┘               
-  &kp TAB            &kp Q   &kp W   &kp E    &kp R           &kp T    &kp Y    &kp U   &kp I   &kp O        
-  &kp LEFT_SHIFT     &kp A   &kp S   &kp D    &kp F           &kp G    &kp H    &kp J   &kp K   &kp L        
-  &kp LEFT_CONTROL   &kp Z   &kp X   &kp C    &kp V           &kp B    &kp N    &kp M   &kp P   &kp RIGHT_ALT
-                                     &trans   &kp SPACE       &trans   &tog 3                                
+//    ┌──────────────┬───┬───┬─────┬─────┐   ┌─────┬───────┬───┬───┬───┐
+//    │     tab      │ Q │ W │  E  │  R  │   │  Y  │   U   │ I │ O │ P │
+//    ├──────────────┼───┼───┼─────┼─────┤   ├─────┼───────┼───┼───┼───┤
+//    │     lsft     │ A │ S │  D  │  F  │   │  H  │   J   │ K │ L │ ; │
+//    ├──────────────┼───┼───┼─────┼─────┤   ├─────┼───────┼───┼───┼───┤
+//    │ left_CONTROL │ Z │ X │  C  │  V  │   │  N  │   M   │ P │ P │ / │
+//    └──────────────┴───┴───┼─────┼─────┤   ├─────┼───────┼───┴───┴───┘
+//                           │     │ spc │   │     │ tog 3 │
+//                           └─────┴─────┘   └─────┴───────┘
+  &kp TAB            &kp Q   &kp W   &kp E    &kp R           &kp Y    &kp U    &kp I   &kp O   &kp P
+  &kp LEFT_SHIFT     &kp A   &kp S   &kp D    &kp F           &kp H    &kp J    &kp K   &kp L   &kp SEMICOLON
+  &kp LEFT_CONTROL   &kp Z   &kp X   &kp C    &kp V           &kp N    &kp M    &kp P   &kp P   &kp FSLH
+                                     &trans   &kp SPACE       &trans   &tog 3
             >;
         };
 
